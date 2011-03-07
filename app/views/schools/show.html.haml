@@ -1,0 +1,8 @@
+%h2= "@#{@school.name}"
+
+= render 'booms/form'
+= render :partial => 'partials/boom', :collection => @school.booms
+
+
+= link_to 'Edit', edit_school_path(@school)
+= link_to 'Back', schools_path

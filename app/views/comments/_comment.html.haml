@@ -1,0 +1,5 @@
+= form_for([boom, boom.comments.build], :remote => true) do |f|
+  .field
+    = f.text_area :body
+  .field
+    = f.submit 'Send'

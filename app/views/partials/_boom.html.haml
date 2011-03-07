@@ -1,0 +1,7 @@
+= div_for boom do
+	%h4= "#{boom.location} 里 #{boom.hair} 的 #{boom.gender ? '女生' : '男生'}"
+	.flirt= boom.flirt
+	.opt= opt4 boom
+	.comments= render :partial => "partials/comment", :collection => boom.comments
+	= render "comments/comment", :boom => boom
+	= render "messages/message", :boom => boom
