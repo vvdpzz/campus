@@ -13,7 +13,8 @@ class SchoolsController < ApplicationController
   
   def home
     current_user.update_attributes(:school => nil, :school_name => nil)
-    redirect_to root_url
+    @schools = School.all
+    render :index
   end
 
   def show
