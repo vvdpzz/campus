@@ -29,6 +29,7 @@ class SchoolsController < ApplicationController
   end
 
   def create
+    params[:school][:abbr].downcase!
     @school = School.new(params[:school])
     if @school.save
       redirect_to(@school, :notice => 'School was successfully created.')
