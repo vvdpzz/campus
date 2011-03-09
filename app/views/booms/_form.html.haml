@@ -1,11 +1,11 @@
-= form_for([@school,@boom]) do |f|
-  - if @boom.errors.any?
+= form_for([school,boom]) do |f|
+  - if boom.errors.any?
     #error_explanation
       %h2
-        = pluralize(@boom.errors.count, "error")
+        = pluralize(boom.errors.count, "error")
         prohibited this boom from being saved:
       %ul
-        - @boom.errors.full_messages.each do |msg|
+        - boom.errors.full_messages.each do |msg|
           %li= msg
   .field
     = label_tag '我在看一个'

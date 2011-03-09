@@ -1,7 +1,5 @@
 = render 'partials/header'
-
-= render 'booms/form'
+= render 'booms/form', :boom => Boom.new, :school => @school
 #booms
   = render :partial => 'partials/boom', :collection => @school.booms
-
 = render 'partials/sidebar'
