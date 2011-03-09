@@ -2666,44 +2666,49 @@ body.bp a:hover {
 }
 
 /* line 70, ../../../app/stylesheets/screen.scss */
-#boom_hair {
-  width: 108px;
+.field span {
+  font-size: 13px;
 }
 
 /* line 73, ../../../app/stylesheets/screen.scss */
-#boom_location {
-  width: 168px;
+#boom_hair {
+  width: 90px;
 }
 
 /* line 76, ../../../app/stylesheets/screen.scss */
-#boom_flirt {
-  width: 440px;
+#boom_location {
+  width: 150px;
 }
 
-/* line 81, ../../../app/stylesheets/screen.scss */
+/* line 79, ../../../app/stylesheets/screen.scss */
+#boom_flirt {
+  width: 430px;
+}
+
+/* line 84, ../../../app/stylesheets/screen.scss */
 .boom {
   padding: 14px 10px 15px;
   border-bottom: 1px solid #E5E5E5;
 }
 
-/* line 85, ../../../app/stylesheets/screen.scss */
+/* line 88, ../../../app/stylesheets/screen.scss */
 .boom-title {
   font-size: 16px;
   color: #5f88ce;
 }
 
-/* line 89, ../../../app/stylesheets/screen.scss */
+/* line 92, ../../../app/stylesheets/screen.scss */
 .flirt {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-/* line 95, ../../../app/stylesheets/screen.scss */
+/* line 98, ../../../app/stylesheets/screen.scss */
 .timestamp {
   color: #ABABAB;
 }
 
-/* line 98, ../../../app/stylesheets/screen.scss */
+/* line 101, ../../../app/stylesheets/screen.scss */
 textarea, input[type="text"], input[type="password"] {
   border: 1px solid #ccc;
   -moz-box-sizing: border-box;
@@ -2713,29 +2718,29 @@ textarea, input[type="text"], input[type="password"] {
   font-size: 14px;
 }
 
-/* line 103, ../../../app/stylesheets/screen.scss */
+/* line 106, ../../../app/stylesheets/screen.scss */
 #new_comment, #new_message {
   display: none;
 }
 
-/* line 106, ../../../app/stylesheets/screen.scss */
+/* line 109, ../../../app/stylesheets/screen.scss */
 #new_message textarea {
   width: 100%;
 }
 
-/* line 109, ../../../app/stylesheets/screen.scss */
+/* line 112, ../../../app/stylesheets/screen.scss */
 .comment, .msg {
   background: #F1F6F9;
   margin: 5px 0px;
   padding: 10px;
 }
 
-/* line 114, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 #received, #sent {
   margin: 20px 0;
 }
 
-/* line 117, ../../../app/stylesheets/screen.scss */
+/* line 120, ../../../app/stylesheets/screen.scss */
 #anchor-change {
   font-size: 13px;
 }
