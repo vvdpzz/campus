@@ -6,8 +6,7 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-    - @title = "匿名告白" if @title.nil?
-    %title= "心动了 － #{@title}"
+    %title 心动了
     = javascript_include_tag :defaults, :cache => true
     = csrf_meta_tag
   %body.two-col.bp
