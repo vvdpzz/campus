@@ -8,15 +8,15 @@
         - @school.errors.full_messages.each do |msg|
           %li= msg
   .field
-    = f.label '学校全名'
+    = f.label '学校全名 如：中山大学'
     %br/
     = f.text_field :name
   .field
-    = f.label '学校英文缩写'
+    = f.label '学校英文缩写 如：sysu'
     %br/
     = f.text_field :abbr
   .field
-    = f.label '学校网址'
+    = f.label '学校网址 如：http://www.sysu.edu.cn'
     %br/
     = f.text_field :website
   .actions
