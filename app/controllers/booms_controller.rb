@@ -1,15 +1,14 @@
 class BoomsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :find_school
+  
+  def new
+  end
 
   def create
     @boom = @school.booms.build(params[:boom])
     @boom.user_id = current_user.id
-    if @boom.save
-      redirect_to(@school, :notice => 'Boom was successfully created.')
-    else
-      render :new
-    end
+    @boom.save
   end
 
   def destroy

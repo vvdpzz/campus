@@ -6,7 +6,9 @@ $('#new_message').dialog({
 	draggable: false,
 	buttons: {
 		发送: function(){
-			$(this).submit();
+			if ($("#message_body").val() != ""){
+				$(this).submit();
+			}
 		},
 		取消: function() {
 			$( this ).dialog( "close" );

@@ -4,11 +4,11 @@
   %p
     = f.label '电子邮箱'
     %br/
-    = f.text_field :email
+    = f.text_field :email, :class => 'required email'
   %p
     = f.label '密码'
     %br/
-    = f.password_field :password
+    = f.password_field :password, :class => 'required'
   %p
     = f.submit "注册"
     |

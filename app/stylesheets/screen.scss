@@ -25,6 +25,11 @@ body.bp{
 }
 body.bp a:hover{color:$link_normal;text-decoration:underline;}
 
+body.bp .error{
+	margin:0;
+	padding:0;
+	vertical-align: top;
+}
 body{
 	background: #4483B4;
 }
