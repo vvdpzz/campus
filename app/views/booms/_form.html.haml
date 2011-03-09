@@ -8,16 +8,16 @@
         - @boom.errors.full_messages.each do |msg|
           %li= msg
   .field
+    = label_tag '我在看一个'
     = f.radio_button :gender, true, :checked => true
     = f.label '女生'
     = f.radio_button :gender, false
     = f.label '男生'
-    = f.label '发型'
+    = f.label '， 发型是'
     = f.text_field :hair
-    = f.label '地点'
+    = f.label '， 地点在'
     = f.text_field :location
   .field
-    = f.label '逗趣'
-    = f.text_area :flirt
-  .actions
-    = f.submit
+    = f.label '煽情：', :style => 'vertical-align: top'
+    = f.text_area :flirt, :rows => 6
+    = f.submit '喵～ 喵～', :style => 'vertical-align: top'

@@ -1,2 +1,15 @@
-$("#<%= @boom.class.name.downcase %>_<%= @boom.id %> #new_message").toggle();
-$("#<%= @boom.class.name.downcase %>_<%= @boom.id %> #message_body").focus();
+$('#new_message').remove();
+$('#container').append("<%= escape_javascript(render 'messages/message', :id => @id)%>");
+$('#new_message').attr("title", "发送私信");
+$('#new_message').dialog({
+	modal: true,
+	draggable: false,
+	buttons: {
+		发送: function(){
+			$(this).submit();
+		},
+		取消: function() {
+			$( this ).dialog( "close" );
+		}
+	}
+});

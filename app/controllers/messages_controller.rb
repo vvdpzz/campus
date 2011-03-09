@@ -1,17 +1,16 @@
 class MessagesController < ApplicationController
   
-  before_filter :find_boom
+  def index
+    @sent = current_user.messages
+    @received = Message.where(:friend_id => current_user.id)
+  end
   
   def new
+    @id = params[:id]
   end
 
   def create
-    @comment = @boom.messages.create(:user_id => current_user.id, :body => params[:message][:body])
-  end
-  
-  protected
-  def find_boom
-    @boom = Boom.find(params[:boom_id])
+    @message = current_user.messages.create(:friend_id => params[:id], :body => params[:message][:body])
   end
   
 end

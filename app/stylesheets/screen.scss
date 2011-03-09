@@ -1,0 +1,108 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Combine the partials into a single screen stylesheet.
+@import "partials/page";
+@import "partials/form";
+@import "partials/two_col";
+
+@import "compass/css3/box-sizing";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/border-radius";
+
+@import "partials/jui";
+
+$link_normal: #5F88CE;
+
+body.bp{
+	a,a:active,a:visited{color:$link_normal;text-decoration:none;}
+}
+body.bp a:hover{color:$link_normal;text-decoration:underline;}
+
+#header{
+	padding:10px;
+	margin:20px 0;
+}
+	#logo{
+		float:left;
+		width:160px;
+		height:40px;
+		background:url(/images/campus.png) no-repeat;
+	}
+	#campus-name{
+		float:left;
+		font-size:22px;
+		margin:14px 20px 0;
+		line-height:1;
+	}
+#campuses{
+	@include clearfix;
+}
+.campus{
+	float:left;
+	margin:10px;
+	font-size:16px;
+}
+#new_boom{
+	padding: 20px 20px 0;
+	border-bottom: 2px solid #E5E5E5;
+	.field{
+		margin-bottom:10px;
+	}
+}
+	#boom_hair{
+		width:108px;
+	}
+	#boom_location{
+		width:168px;
+	}
+	#boom_flirt{
+		width:440px;
+	}
+#booms{
+}
+	.boom{
+		padding:14px 10px 15px;
+		border-bottom: 1px solid #E5E5E5;
+	}
+		.boom-title{
+			font-size:16px;
+			color: $link_normal;
+		}
+		.flirt{
+			font-size:14px;
+			margin-bottom:5px;
+		}
+		.opt{
+		}
+		.timestamp{
+			color:#ABABAB;
+		}
+textarea, input[type="text"], input[type="password"]{
+	border:1px solid #ccc;
+	@include box-sizing(border-box);
+	font-size:14px;
+}
+#new_comment, #new_message{
+  display:none;
+}
+#new_message textarea{
+	width:100%;
+}
+.comment, .msg{
+  background: #F1F6F9;
+  margin: 5px 0px;
+  padding: 10px;
+}
+#received, #sent{
+	margin:20px 0;
+}
+#anchor-change{
+	font-size:13px;
+}

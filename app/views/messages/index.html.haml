@@ -1,0 +1,17 @@
+= render 'partials/header'
+
+%h2 私信
+#received
+	%h3 接收
+	- @received.each do |msg|
+		.msg
+			= msg.body
+			.opt= opt4m msg
+#sent
+	%h3 发送
+	- @sent.each do |msg|
+		.msg
+			= msg.body
+			.opt= timestamp(msg.created_at)
+
+= render 'partials/sidebar'

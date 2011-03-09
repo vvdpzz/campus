@@ -10,6 +10,8 @@ class CreateBooms < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :booms, :user_id
+    add_index :booms, :school_id
   end
 
   def self.down

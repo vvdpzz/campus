@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110307075528) do
+ActiveRecord::Schema.define(:version => 20110309040757) do
 
   create_table "booms", :force => true do |t|
     t.integer  "user_id"
@@ -23,21 +23,30 @@ ActiveRecord::Schema.define(:version => 20110307075528) do
     t.datetime "updated_at"
   end
 
+  add_index "booms", ["school_id"], :name => "index_booms_on_school_id"
+  add_index "booms", ["user_id"], :name => "index_booms_on_user_id"
+
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
+    t.string   "name"
     t.integer  "boom_id"
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "comments", ["boom_id"], :name => "index_comments_on_boom_id"
+  add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
+
   create_table "messages", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "boom_id"
+    t.integer  "friend_id"
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "messages", ["user_id"], :name => "index_messages_on_user_id"
 
   create_table "schools", :force => true do |t|
     t.string   "name"
@@ -61,6 +70,10 @@ ActiveRecord::Schema.define(:version => 20110307075528) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "school"
+    t.string   "school_name"
+    t.integer  "guid"
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

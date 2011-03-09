@@ -1,0 +1,8 @@
+- content_for :campus do
+	#campus-name  之 你的大学
+#campuses
+	- @schools.each do |school|
+		.campus= link_to school.name, school
+
+- content_for :sidebar do
+	%h2= link_to '添加新学校', new_school_path

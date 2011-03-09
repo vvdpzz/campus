@@ -4,14 +4,17 @@ Campus::Application.routes.draw do
     resources :booms, :except => [:index, :new, :show]
   end
   
+  get '/home' => 'schools#home', :as => :home
+  
   resources :booms, :except => [:index, :show, :new, :create, :edit, :update, :destroy] do
     resources :comments, :only => [:new, :create]
-    resources :messages, :only => [:new, :create]
   end
+  
+  resources :messages
 
   devise_for :users
   
-  # get '/:abbr' => 'schools#show', :as => :school
+  match '/:id' => "schools#show", :as => :school
   
   root :to => "schools#index"
 
