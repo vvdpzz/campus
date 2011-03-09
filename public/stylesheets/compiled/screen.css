@@ -2744,3 +2744,12 @@ textarea, input[type="text"], input[type="password"] {
 #anchor-change {
   font-size: 13px;
 }
+
+/* line 123, ../../../app/stylesheets/screen.scss */
+#sidebar-anchors {
+  font-size: 16px;
+}
+/* line 125, ../../../app/stylesheets/screen.scss */
+#sidebar-anchors a {
+  margin: 10px;
+}

@@ -1,4 +1,5 @@
 - content_for :sidebar do
-  = link_to '主页', current_user.school
-  = link_to '私信', messages_url(:only_path => true)
-  = link_to "注销", destroy_user_session_path
+  #sidebar-anchors
+    = link_to '主页', current_user.school
+    = link_to '私信', messages_url(:only_path => true)
+    = link_to "注销", destroy_user_session_path
