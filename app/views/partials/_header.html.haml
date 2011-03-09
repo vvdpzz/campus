@@ -1,4 +1,4 @@
 - content_for :campus do
   #campus-name
-    = "之 #{current_user.school_name}"
+    = "@#{current_user.school_name}"
     = link_to '切换学校', home_url, :id => 'anchor-change'

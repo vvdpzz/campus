@@ -18,6 +18,7 @@ class SchoolsController < ApplicationController
 
   def show
     @boom = current_user.booms.build
+    @title = @school.name
     current_user.update_attributes(:school => url_for(@school), :school_name => @school.name)
   end
 

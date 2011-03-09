@@ -26,14 +26,25 @@ body.bp{
 body.bp a:hover{color:$link_normal;text-decoration:underline;}
 
 #header{
-	padding:10px;
 	margin:20px 0;
 }
+	#header-top{
+		@include clearfix;
+	}
+	#notice{
+		background-color: #FFF8CC;
+		border: 1px solid #FFE222;
+		padding:8px;
+		margin:15px 0;
+	}
 	#logo{
 		float:left;
-		width:160px;
-		height:40px;
-		background:url(/images/campus.png) no-repeat;
+		a{
+			display:block;
+			width:110px;
+			height:40px;
+			background:url(/images/campus.png) no-repeat;
+		}
 	}
 	#campus-name{
 		float:left;

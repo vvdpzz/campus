@@ -6,15 +6,17 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-    %title Campus
-    = javascript_include_tag :defaults
+    %title= "心动了 － #{@title}"
+    = javascript_include_tag :defaults, :cache => true
     = csrf_meta_tag
   %body.two-col.bp
     #container
       #header
-        #logo
-        = yield :campus
-        #notice= notice
+        #header-top
+          #logo=link_to '', root_url
+          = yield :campus
+        - if notice
+          #notice= notice
       #content
         = yield
       #sidebar
