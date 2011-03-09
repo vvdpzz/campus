@@ -25,6 +25,21 @@ body.bp{
 }
 body.bp a:hover{color:$link_normal;text-decoration:underline;}
 
+body{
+	background: #4483B4;
+}
+#content{
+	background: white;
+	padding:15px;
+	@include box-sizing(border-box);
+	@include border-radius(5px);
+	min-height: 500px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	margin:0;
+}
+
 #header{
 	margin:20px 0;
 }
@@ -51,6 +66,14 @@ body.bp a:hover{color:$link_normal;text-decoration:underline;}
 		font-size:22px;
 		margin:14px 20px 0;
 		line-height:1;
+		color: #CFEEF6;
+		text-shadow: #333 0px 1px 0px;
+		a{
+			color: white;
+		}
+		a:hover{
+			text-decoration:none;
+		}
 	}
 #campuses{
 	@include clearfix;
@@ -61,7 +84,6 @@ body.bp a:hover{color:$link_normal;text-decoration:underline;}
 	font-size:16px;
 }
 #new_boom{
-	padding: 20px 20px 0;
 	border-bottom: 2px solid #E5E5E5;
 	.field{
 		margin-bottom:10px;
@@ -101,7 +123,7 @@ body.bp a:hover{color:$link_normal;text-decoration:underline;}
 textarea, input[type="text"], input[type="password"]{
 	border:1px solid #ccc;
 	@include box-sizing(border-box);
-	font-size:14px;
+	font-size:13px;
 }
 #new_comment, #new_message{
   display:none;
@@ -120,9 +142,21 @@ textarea, input[type="text"], input[type="password"]{
 #anchor-change{
 	font-size:13px;
 }
+#sidebar h2 a{
+	color: #DCEBF6;
+}
+#sidebar h2 a:hover{
+	color: white;
+	text-decoration:none;
+}
 #sidebar-anchors{
 	font-size:16px;
 	a{
 		margin:10px;
+		color: #DCEBF6;
+	}
+	a:hover{
+		color: white;
+		text-decoration:none;
 	}
 }
