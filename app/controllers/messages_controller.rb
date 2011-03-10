@@ -12,6 +12,10 @@ class MessagesController < ApplicationController
 
   def create
     @message = current_user.messages.create(:friend_id => params[:id], :body => params[:message][:body])
+    respond_to do |format|
+      format.js
+      format.html{ redirect_to(current_user.school, :notice => "私信发送成功！")}
+    end
   end
   
 end

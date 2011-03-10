@@ -1,5 +1,7 @@
 $('#new_message').remove();
 $('#container').append("<%= escape_javascript(render 'messages/message', :id => @id)%>");
+$('#new_message').hide();
+$('#message_submit').remove();
 $('#new_message').attr("title", "发送私信");
 $('#new_message').dialog({
 	modal: true,

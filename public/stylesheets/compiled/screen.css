@@ -526,7 +526,7 @@ body.two-col #sidebar {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 350px;
+  width: 310px;
 }
 /* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #sidebar {
@@ -537,7 +537,7 @@ body.two-col #content {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 590px;
+  width: 630px;
 }
 /* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {
@@ -2762,53 +2762,48 @@ textarea, input[type="text"], input[type="password"] {
 }
 
 /* line 133, ../../../app/stylesheets/screen.scss */
-#new_comment, #new_message {
-  display: none;
-}
-
-/* line 136, ../../../app/stylesheets/screen.scss */
 #new_message textarea {
   width: 100%;
 }
 
-/* line 139, ../../../app/stylesheets/screen.scss */
+/* line 136, ../../../app/stylesheets/screen.scss */
 .comment, .msg {
   background: #F1F6F9;
   margin: 5px 0px;
   padding: 10px;
 }
 
-/* line 144, ../../../app/stylesheets/screen.scss */
+/* line 141, ../../../app/stylesheets/screen.scss */
 #received, #sent {
   margin: 20px 0;
 }
 
-/* line 147, ../../../app/stylesheets/screen.scss */
+/* line 144, ../../../app/stylesheets/screen.scss */
 #anchor-change {
   font-size: 13px;
 }
 
-/* line 150, ../../../app/stylesheets/screen.scss */
+/* line 147, ../../../app/stylesheets/screen.scss */
 #sidebar h2 a {
   color: #DCEBF6;
 }
 
-/* line 153, ../../../app/stylesheets/screen.scss */
+/* line 150, ../../../app/stylesheets/screen.scss */
 #sidebar h2 a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 157, ../../../app/stylesheets/screen.scss */
+/* line 154, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors {
   font-size: 16px;
 }
-/* line 159, ../../../app/stylesheets/screen.scss */
+/* line 156, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors a {
   margin: 10px;
   color: #DCEBF6;
 }
-/* line 163, ../../../app/stylesheets/screen.scss */
+/* line 160, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors a:hover {
   color: white;
   text-decoration: none;

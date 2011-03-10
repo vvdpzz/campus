@@ -7,6 +7,10 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @boom.comments.create(:user_id => current_user.id, :body => params[:comment][:body])
+    respond_to do |format|
+      format.js
+      format.html{ redirect_to @boom.school}
+    end
   end
   
   protected

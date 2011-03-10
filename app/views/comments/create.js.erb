@@ -1,4 +1,5 @@
 $("#<%= @boom.class.name.downcase %>_<%= @boom.id %> #new_comment")[0].reset();
+$("#<%= @boom.class.name.downcase %>_<%= @boom.id %> #new_comment").remove();
 $("#<%= @boom.class.name.downcase %>_<%= @boom.id %> .comments").append(
 	"<%= escape_javascript(render 'partials/comment', :comment => @comment)%>"
 );

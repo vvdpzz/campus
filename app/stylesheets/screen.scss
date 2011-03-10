@@ -130,9 +130,6 @@ textarea, input[type="text"], input[type="password"]{
 	@include box-sizing(border-box);
 	font-size:13px;
 }
-#new_comment, #new_message{
-  display:none;
-}
 #new_message textarea{
 	width:100%;
 }

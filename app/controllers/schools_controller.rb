@@ -19,7 +19,7 @@ class SchoolsController < ApplicationController
 
   def show
     @title = @school.name
-    current_user.update_attributes(:school => url_for(@school), :school_name => @school.name)
+    current_user.update_attributes(:school => "/#{@school.abbr}", :school_name => @school.name)
   end
 
   def new

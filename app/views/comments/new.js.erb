@@ -1,2 +1,2 @@
-$("#<%= @boom.class.name.downcase %>_<%= @boom.id %> #new_comment").toggle();
+$("#<%= @boom.class.name.downcase %>_<%= @boom.id %>").append("<%= escape_javascript(render 'comments/comment', :boom => @boom)%>");
 $("#<%= @boom.class.name.downcase %>_<%= @boom.id %> #comment_body").focus();

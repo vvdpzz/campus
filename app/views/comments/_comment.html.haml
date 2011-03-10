@@ -1,4 +1,4 @@
-= form_for([boom, boom.comments.build], :remote => true) do |f|
+= form_for([boom, Comment.new], :remote => true) do |f|
   .field
     = f.text_area :body, :rows => 3, :class => 'required'
   .field

@@ -9,6 +9,10 @@ class BoomsController < ApplicationController
     @boom = @school.booms.build(params[:boom])
     @boom.user_id = current_user.id
     @boom.save
+    respond_to do |format|
+      format.js
+      format.html{ redirect_to @school}
+    end
   end
 
   def destroy
