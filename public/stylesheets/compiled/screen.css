@@ -526,7 +526,7 @@ body.two-col #sidebar {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 310px;
+  width: 230px;
 }
 /* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #sidebar {
@@ -2630,11 +2630,9 @@ body {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   min-height: 500px;
-}
-
-/* line 43, ../../../app/stylesheets/screen.scss */
-body.two-col #sidebar {
-  float: right;
+  height: auto !important;
+  height: 500px;
+  overflow: visible;
 }
 
 /* line 46, ../../../app/stylesheets/screen.scss */

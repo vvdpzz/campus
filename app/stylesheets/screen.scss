@@ -39,9 +39,9 @@ body{
 	@include box-sizing(border-box);
 	@include border-radius(5px);
 	min-height: 500px;
-}
-body.two-col #sidebar{
-	float:right;
+	height:auto !important;
+	height:500px;
+	overflow:visible;
 }
 input[type="radio"], input[type="checkbox"]{
 	margin:0;
