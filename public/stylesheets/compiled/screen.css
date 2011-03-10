@@ -2632,23 +2632,28 @@ body {
   min-height: 500px;
 }
 
-/* line 44, ../../../app/stylesheets/screen.scss */
+/* line 43, ../../../app/stylesheets/screen.scss */
+body.two-col #sidebar {
+  float: right;
+}
+
+/* line 46, ../../../app/stylesheets/screen.scss */
 input[type="radio"], input[type="checkbox"] {
   margin: 0;
 }
 
-/* line 48, ../../../app/stylesheets/screen.scss */
+/* line 50, ../../../app/stylesheets/screen.scss */
 #header {
   margin: 20px 0;
 }
 
-/* line 51, ../../../app/stylesheets/screen.scss */
+/* line 53, ../../../app/stylesheets/screen.scss */
 #header-top {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 54, ../../../app/stylesheets/screen.scss */
+/* line 56, ../../../app/stylesheets/screen.scss */
 #notice {
   background-color: #FFF8CC;
   border: 1px solid #FFE222;
@@ -2656,11 +2661,11 @@ input[type="radio"], input[type="checkbox"] {
   margin: 15px 0;
 }
 
-/* line 60, ../../../app/stylesheets/screen.scss */
+/* line 62, ../../../app/stylesheets/screen.scss */
 #logo {
   float: left;
 }
-/* line 62, ../../../app/stylesheets/screen.scss */
+/* line 64, ../../../app/stylesheets/screen.scss */
 #logo a {
   display: block;
   width: 110px;
@@ -2668,7 +2673,7 @@ input[type="radio"], input[type="checkbox"] {
   background: url(/images/campus.png) no-repeat;
 }
 
-/* line 69, ../../../app/stylesheets/screen.scss */
+/* line 71, ../../../app/stylesheets/screen.scss */
 #campus-name {
   float: left;
   font-size: 22px;
@@ -2677,81 +2682,81 @@ input[type="radio"], input[type="checkbox"] {
   color: #CFEEF6;
   text-shadow: #333 0px 1px 0px;
 }
-/* line 76, ../../../app/stylesheets/screen.scss */
+/* line 78, ../../../app/stylesheets/screen.scss */
 #campus-name a {
   color: white;
 }
-/* line 79, ../../../app/stylesheets/screen.scss */
+/* line 81, ../../../app/stylesheets/screen.scss */
 #campus-name a:hover {
   text-decoration: none;
 }
 
-/* line 83, ../../../app/stylesheets/screen.scss */
+/* line 85, ../../../app/stylesheets/screen.scss */
 #campuses {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 86, ../../../app/stylesheets/screen.scss */
+/* line 88, ../../../app/stylesheets/screen.scss */
 .campus {
   float: left;
   margin: 10px;
   font-size: 16px;
 }
 
-/* line 91, ../../../app/stylesheets/screen.scss */
+/* line 93, ../../../app/stylesheets/screen.scss */
 #new_boom {
   border-bottom: 2px solid #E5E5E5;
 }
-/* line 93, ../../../app/stylesheets/screen.scss */
+/* line 95, ../../../app/stylesheets/screen.scss */
 #new_boom .field {
   margin-bottom: 10px;
 }
 
-/* line 97, ../../../app/stylesheets/screen.scss */
+/* line 99, ../../../app/stylesheets/screen.scss */
 .field span {
   font-size: 13px;
 }
 
-/* line 100, ../../../app/stylesheets/screen.scss */
+/* line 102, ../../../app/stylesheets/screen.scss */
 #boom_hair {
   width: 90px;
 }
 
-/* line 103, ../../../app/stylesheets/screen.scss */
+/* line 105, ../../../app/stylesheets/screen.scss */
 #boom_location {
   width: 150px;
 }
 
-/* line 106, ../../../app/stylesheets/screen.scss */
+/* line 108, ../../../app/stylesheets/screen.scss */
 #boom_flirt {
   width: 430px;
 }
 
-/* line 111, ../../../app/stylesheets/screen.scss */
+/* line 113, ../../../app/stylesheets/screen.scss */
 .boom {
   padding: 14px 10px 15px;
   border-bottom: 1px solid #E5E5E5;
 }
 
-/* line 115, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 .boom-title {
   font-size: 16px;
   color: #5f88ce;
 }
 
-/* line 119, ../../../app/stylesheets/screen.scss */
+/* line 121, ../../../app/stylesheets/screen.scss */
 .flirt {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-/* line 125, ../../../app/stylesheets/screen.scss */
+/* line 127, ../../../app/stylesheets/screen.scss */
 .timestamp {
   color: #ABABAB;
 }
 
-/* line 128, ../../../app/stylesheets/screen.scss */
+/* line 130, ../../../app/stylesheets/screen.scss */
 textarea, input[type="text"], input[type="password"] {
   border: 1px solid #ccc;
   -moz-box-sizing: border-box;
@@ -2761,49 +2766,49 @@ textarea, input[type="text"], input[type="password"] {
   font-size: 13px;
 }
 
-/* line 133, ../../../app/stylesheets/screen.scss */
+/* line 135, ../../../app/stylesheets/screen.scss */
 #new_message textarea {
   width: 100%;
 }
 
-/* line 136, ../../../app/stylesheets/screen.scss */
+/* line 138, ../../../app/stylesheets/screen.scss */
 .comment, .msg {
   background: #F1F6F9;
   margin: 5px 0px;
   padding: 10px;
 }
 
-/* line 141, ../../../app/stylesheets/screen.scss */
+/* line 143, ../../../app/stylesheets/screen.scss */
 #received, #sent {
   margin: 20px 0;
 }
 
-/* line 144, ../../../app/stylesheets/screen.scss */
+/* line 146, ../../../app/stylesheets/screen.scss */
 #anchor-change {
   font-size: 13px;
 }
 
-/* line 147, ../../../app/stylesheets/screen.scss */
+/* line 149, ../../../app/stylesheets/screen.scss */
 #sidebar h2 a {
   color: #DCEBF6;
 }
 
-/* line 150, ../../../app/stylesheets/screen.scss */
+/* line 152, ../../../app/stylesheets/screen.scss */
 #sidebar h2 a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 154, ../../../app/stylesheets/screen.scss */
+/* line 156, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors {
   font-size: 16px;
 }
-/* line 156, ../../../app/stylesheets/screen.scss */
+/* line 158, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors a {
   margin: 10px;
   color: #DCEBF6;
 }
-/* line 160, ../../../app/stylesheets/screen.scss */
+/* line 162, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors a:hover {
   color: white;
   text-decoration: none;
