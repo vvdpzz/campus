@@ -7,13 +7,15 @@ class SchoolsController < ApplicationController
     if current_user.school
       redirect_to current_user.school
     else
-      @schools = School.all
+      @schools = School.last(10)
+      @booms = Boom.first(3)
     end
   end
   
   def home
     current_user.update_attributes(:school => nil, :school_name => nil)
-    @schools = School.all
+    @schools = School.last(10)
+    @booms = Boom.first(3)
     render :index
   end
 

@@ -2640,18 +2640,142 @@ input[type="radio"], input[type="checkbox"] {
   margin: 0;
 }
 
-/* line 50, ../../../app/stylesheets/screen.scss */
+/* line 49, ../../../app/stylesheets/screen.scss */
+.bg {
+  background: url(/images/bg_homex.png) repeat-x;
+}
+
+/* line 52, ../../../app/stylesheets/screen.scss */
+#header_band {
+  background: url(/images/bg_home.jpg) no-repeat 50% 0%;
+  height: 300px;
+}
+
+/* line 56, ../../../app/stylesheets/screen.scss */
+#header_core {
+  padding-top: 70px;
+}
+
+/* line 59, ../../../app/stylesheets/screen.scss */
+#header_core h1 {
+  color: white;
+  font-size: 4.2em;
+  letter-spacing: -2px;
+  text-align: center;
+  text-shadow: #555 0px 1px 3px;
+}
+
+/* line 66, ../../../app/stylesheets/screen.scss */
+#header_core h2 {
+  color: #CFEEF6;
+  font-size: 1.8em;
+  font-weight: 100;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: #40708F 0px 1px 0px;
+}
+
+/* line 74, ../../../app/stylesheets/screen.scss */
+#first, #second {
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #first, * html #second {
+  overflow-x: hidden;
+}
+
+/* line 79, ../../../app/stylesheets/screen.scss */
+#third {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+}
+/* line 138, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #third {
+  overflow-x: hidden;
+}
+
+/* line 83, ../../../app/stylesheets/screen.scss */
+#first h2, #second h2, #third h2 {
+  border-bottom: 2px solid #E5E5E5;
+  color: #444;
+  font-size: 1.8em;
+  padding-bottom: 5px;
+}
+
+/* line 90, ../../../app/stylesheets/screen.scss */
+.campus {
+  font-size: 16px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-top: 12px;
+  padding-bottom: 15px;
+}
+
+/* line 96, ../../../app/stylesheets/screen.scss */
+.form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* line 99, ../../../app/stylesheets/screen.scss */
+.form-label span {
+  color: #888;
+  font-size: 14px;
+}
+
+/* line 104, ../../../app/stylesheets/screen.scss */
+#new_school .field {
+  margin-bottom: 10px;
+}
+/* line 106, ../../../app/stylesheets/screen.scss */
+#new_school .field input[type="text"] {
+  padding: 2px;
+  color: #444;
+}
+
+/* line 111, ../../../app/stylesheets/screen.scss */
+.boom-smalltitle {
+  font-size: 14px;
+  color: #5f88ce;
+}
+/* line 114, ../../../app/stylesheets/screen.scss */
+.boom-smalltitle span {
+  color: #ABABAB;
+}
+
+/* line 118, ../../../app/stylesheets/screen.scss */
+.smallflirt {
+  font-size: 13px;
+  color: #666;
+}
+
+/* line 122, ../../../app/stylesheets/screen.scss */
+.index_boom {
+  border-bottom: 1px solid #E5E5E5;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 127, ../../../app/stylesheets/screen.scss */
 #header {
   margin: 20px 0;
 }
 
-/* line 53, ../../../app/stylesheets/screen.scss */
+/* line 130, ../../../app/stylesheets/screen.scss */
 #header-top {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 56, ../../../app/stylesheets/screen.scss */
+/* line 133, ../../../app/stylesheets/screen.scss */
 #notice {
   background-color: #FFF8CC;
   border: 1px solid #FFE222;
@@ -2659,11 +2783,11 @@ input[type="radio"], input[type="checkbox"] {
   margin: 15px 0;
 }
 
-/* line 62, ../../../app/stylesheets/screen.scss */
+/* line 139, ../../../app/stylesheets/screen.scss */
 #logo {
   float: left;
 }
-/* line 64, ../../../app/stylesheets/screen.scss */
+/* line 141, ../../../app/stylesheets/screen.scss */
 #logo a {
   display: block;
   width: 110px;
@@ -2671,7 +2795,7 @@ input[type="radio"], input[type="checkbox"] {
   background: url(/images/campus.png) no-repeat;
 }
 
-/* line 71, ../../../app/stylesheets/screen.scss */
+/* line 148, ../../../app/stylesheets/screen.scss */
 #campus-name {
   float: left;
   font-size: 22px;
@@ -2680,81 +2804,68 @@ input[type="radio"], input[type="checkbox"] {
   color: #CFEEF6;
   text-shadow: #333 0px 1px 0px;
 }
-/* line 78, ../../../app/stylesheets/screen.scss */
+/* line 155, ../../../app/stylesheets/screen.scss */
 #campus-name a {
   color: white;
 }
-/* line 81, ../../../app/stylesheets/screen.scss */
+/* line 158, ../../../app/stylesheets/screen.scss */
 #campus-name a:hover {
   text-decoration: none;
 }
 
-/* line 85, ../../../app/stylesheets/screen.scss */
-#campuses {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 88, ../../../app/stylesheets/screen.scss */
-.campus {
-  float: left;
-  margin: 10px;
-  font-size: 16px;
-}
-
-/* line 93, ../../../app/stylesheets/screen.scss */
+/* line 162, ../../../app/stylesheets/screen.scss */
 #new_boom {
   border-bottom: 2px solid #E5E5E5;
 }
-/* line 95, ../../../app/stylesheets/screen.scss */
+/* line 164, ../../../app/stylesheets/screen.scss */
 #new_boom .field {
   margin-bottom: 10px;
 }
 
-/* line 99, ../../../app/stylesheets/screen.scss */
+/* line 168, ../../../app/stylesheets/screen.scss */
 .field span {
   font-size: 13px;
 }
 
-/* line 102, ../../../app/stylesheets/screen.scss */
+/* line 171, ../../../app/stylesheets/screen.scss */
 #boom_hair {
   width: 90px;
 }
 
-/* line 105, ../../../app/stylesheets/screen.scss */
+/* line 174, ../../../app/stylesheets/screen.scss */
 #boom_location {
   width: 150px;
 }
 
-/* line 108, ../../../app/stylesheets/screen.scss */
+/* line 177, ../../../app/stylesheets/screen.scss */
 #boom_flirt {
   width: 430px;
 }
 
-/* line 113, ../../../app/stylesheets/screen.scss */
+/* line 182, ../../../app/stylesheets/screen.scss */
 .boom {
   padding: 14px 10px 15px;
   border-bottom: 1px solid #E5E5E5;
 }
 
-/* line 117, ../../../app/stylesheets/screen.scss */
+/* line 186, ../../../app/stylesheets/screen.scss */
 .boom-title {
   font-size: 16px;
   color: #5f88ce;
 }
 
-/* line 121, ../../../app/stylesheets/screen.scss */
+/* line 190, ../../../app/stylesheets/screen.scss */
 .flirt {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-/* line 127, ../../../app/stylesheets/screen.scss */
+/* line 196, ../../../app/stylesheets/screen.scss */
 .timestamp {
   color: #ABABAB;
 }
 
-/* line 130, ../../../app/stylesheets/screen.scss */
+/* line 199, ../../../app/stylesheets/screen.scss */
 textarea, input[type="text"], input[type="password"] {
   border: 1px solid #ccc;
   -moz-box-sizing: border-box;
@@ -2764,49 +2875,49 @@ textarea, input[type="text"], input[type="password"] {
   font-size: 13px;
 }
 
-/* line 135, ../../../app/stylesheets/screen.scss */
+/* line 204, ../../../app/stylesheets/screen.scss */
 #new_message textarea {
   width: 100%;
 }
 
-/* line 138, ../../../app/stylesheets/screen.scss */
+/* line 207, ../../../app/stylesheets/screen.scss */
 .comment, .msg {
   background: #F1F6F9;
   margin: 5px 0px;
   padding: 10px;
 }
 
-/* line 143, ../../../app/stylesheets/screen.scss */
+/* line 212, ../../../app/stylesheets/screen.scss */
 #received, #sent {
   margin: 20px 0;
 }
 
-/* line 146, ../../../app/stylesheets/screen.scss */
+/* line 215, ../../../app/stylesheets/screen.scss */
 #anchor-change {
   font-size: 13px;
 }
 
-/* line 149, ../../../app/stylesheets/screen.scss */
+/* line 218, ../../../app/stylesheets/screen.scss */
 #sidebar h2 a {
   color: #DCEBF6;
 }
 
-/* line 152, ../../../app/stylesheets/screen.scss */
+/* line 221, ../../../app/stylesheets/screen.scss */
 #sidebar h2 a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 156, ../../../app/stylesheets/screen.scss */
+/* line 225, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors {
   font-size: 16px;
 }
-/* line 158, ../../../app/stylesheets/screen.scss */
+/* line 227, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors a {
   margin: 10px;
   color: #DCEBF6;
 }
-/* line 162, ../../../app/stylesheets/screen.scss */
+/* line 231, ../../../app/stylesheets/screen.scss */
 #sidebar-anchors a:hover {
   color: white;
   text-decoration: none;

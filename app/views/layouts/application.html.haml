@@ -12,17 +12,23 @@
 	= javascript_include_tag 'http://ajax.microsoft.com/ajax/jQuery.Validate/1.7/jQuery.Validate.min.js'
 	= javascript_include_tag :defaults, :cache => true
 	= csrf_meta_tag
-
-%body.two-col.bp
-	#container
-		#header
-			#header-top
-				#logo=link_to '', root_url
-				= yield :campus
-			- if notice
-				#notice= notice
-		#content
+- if params[:controller] ==  'schools' and (params[:action] == 'index' or params[:action] == 'home')
+	%body.two-col.bp.bg
+		= yield :home
+		#container
 			= yield
-		#sidebar
-			= yield :sidebar
-		#foot
+- else
+	%body.two-col.bp
+		= yield :home
+		#container
+			#header
+				#header-top
+					#logo=link_to '', root_url
+					= yield :campus
+				- if notice
+					#notice= notice
+			#content
+				= yield
+			#sidebar
+				= yield :sidebar
+			#foot

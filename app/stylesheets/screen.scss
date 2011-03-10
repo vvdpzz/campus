@@ -46,7 +46,84 @@ body{
 input[type="radio"], input[type="checkbox"]{
 	margin:0;
 }
-
+.bg{
+	background: url(/images/bg_homex.png) repeat-x;
+}
+#header_band{
+	background: url(/images/bg_home.jpg) no-repeat 50% 0%;
+	height: 300px;
+}
+#header_core{
+	padding-top: 70px;
+}
+#header_core h1{
+	color: white;
+	font-size: 4.2em;
+	letter-spacing: -2px;
+	text-align: center;
+	text-shadow: #555 0px 1px 3px;
+}
+#header_core h2{
+	color: #CFEEF6;
+	font-size: 1.8em;
+	font-weight: 100;
+	padding-top: 20px;
+	text-align: center;
+	text-shadow: #40708F 0px 1px 0px;
+}
+#first,#second{
+	padding-right:20px;
+	@include box-sizing(border-box);
+	@include column(8);
+}
+#third{
+	@include column(8,true);
+}
+#first,#second,#third{
+	h2{
+		border-bottom: 2px solid #E5E5E5;
+		color: #444;
+		font-size: 1.8em;
+		padding-bottom: 5px;
+	}
+}
+.campus{
+	font-size:16px;
+	border-bottom: 1px solid #E5E5E5;
+	margin-top: 12px;
+	padding-bottom: 15px;
+}
+.form-label{
+	font-size:16px;
+	margin-bottom:5px;
+	span{
+		color:#888;
+		font-size:14px;
+	}
+}
+#new_school .field{
+	margin-bottom:10px;
+	input[type="text"]{
+		padding:2px;
+		color:#444;
+	}
+}
+.boom-smalltitle{
+	font-size:14px;
+	color: $link_normal;
+	span{
+		color:#ABABAB;
+	}
+}
+.smallflirt{
+	font-size:13px;
+	color:#666;
+}
+.index_boom{
+	border-bottom: 1px solid #E5E5E5;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
 #header{
 	margin:20px 0;
 }
@@ -82,14 +159,6 @@ input[type="radio"], input[type="checkbox"]{
 			text-decoration:none;
 		}
 	}
-#campuses{
-	@include clearfix;
-}
-.campus{
-	float:left;
-	margin:10px;
-	font-size:16px;
-}
 #new_boom{
 	border-bottom: 2px solid #E5E5E5;
 	.field{

@@ -1,8 +1,27 @@
-- content_for :campus do
-	#campus-name  @大学
-#campuses
+- content_for :home do
+	#header_band
+		#header_core
+			%h1 心动了
+			%h2 在你的学校向你的心动对象匿名告白！
+#first
+	%h2 最新的告白
+	- @booms.each do |boom|
+		.index_boom
+			.boom-smalltitle
+				= boom.hair
+				%span 的
+				= boom.gender ? '女生' : '男生'
+				%span 在
+				= boom.location
+				%span 被心动了
+			.smallflirt
+				= boom.flirt
+			.opt
+				= timestamp boom.created_at
+#second
+	%h2 新加入的学校
 	- @schools.each do |school|
 		.campus= link_to school.name, school
-
-- content_for :sidebar do
-	%h2= link_to '添加新学校', new_school_path
+#third
+	%h2 创建新学校
+	= render School.new
